@@ -40,3 +40,4 @@ Today felt like the first real step into cybersecurity. Everything still feels n
 
 - Bandit Level 1
 - Continue TryHackMe Pre-Security
+- and further on .. 
