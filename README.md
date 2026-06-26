@@ -40,4 +40,3 @@ Today felt like the first real step into cybersecurity. Everything still feels n
 
 - Bandit Level 1
 - Continue TryHackMe Pre-Security
-- Write my first Python script<img width="300" height="150" alt="markmap" src="https://github.com/user-attachments/assets/75eca9e1-6357-42f4-90f6-d464d1fcd5c1" />
