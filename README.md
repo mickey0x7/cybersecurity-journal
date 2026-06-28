@@ -1,9 +1,11 @@
-Cybersecurity Journal
+#Cybersecurity Journal
 
 Day 1 — [26-06-2026] — Linux Basics, Networking & First Wargame
+
 Time
 
 ~2 hours
+
 What I Did
 
 Created accounts on GitHub, LinkedIn, TryHackMe, and HTB Academy, using the same username across all of them.
@@ -39,10 +41,12 @@ Bandit Level 1,2,3
 Continue TryHackMe Pre-Security or else related rooms
 
 
-Day 2 — [insert date] — Bandit Levels 1–3 & Computer Fundamentals
+#Day 2 — [27-06-2026] — Bandit Levels 1–3 & Computer Fundamentals
+
 Time
 
 ~1.5 hours
+
 What I Did
 
 Solved Bandit Level 1 — a file literally named -.
