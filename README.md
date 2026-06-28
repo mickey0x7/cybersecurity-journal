@@ -1,80 +1,274 @@
-#Cybersecurity Journal
+# 🛡️ Cybersecurity Journal
 
-Day 1 — [26-06-2026] — Linux Basics, Networking & First Wargame
+---
 
-Time
+# 📅 Day 1 — 26 June 2026
 
-~2 hours
+**Focus:** Linux Basics • Networking • First Wargame (Bandit)
 
-What I Did
+⏱️ **Time Spent:** ~2 Hours
 
-Created accounts on GitHub, LinkedIn, TryHackMe, and HTB Academy, using the same username across all of them.
-Practiced basic Linux commands.
-Learned how to use nano after getting stuck saving a file.
-Completed OverTheWire Bandit Level 0.
-Finished the first TryHackMe networking lesson.
+---
 
-What I Learned
+## 🎯 Objectives
 
-Today I learned that the Internet began with ARPANET, a project funded by the U.S. Department of Defense. Years later, Tim Berners-Lee created the World Wide Web, making the Internet much easier to use.
-I also learned that every network device has two important identifiers:
+* Learn basic Linux commands
+* Complete OverTheWire Bandit Level 0
+* Begin networking fundamentals
+* Set up cybersecurity learning accounts
 
-MAC Address – identifies the specific hardware interface itself.
-IP Address – identifies the device on a network and can change.
+---
 
-IPv4 uses four octets ranging from 0–255. Because IPv4 has a limited number of addresses, IPv6 was created with a vastly larger address space.
-I also learned the basic idea of spoofing, where an attacker pretends to be another device by forging information such as an IP or MAC address.
+## ✅ Completed
 
-Biggest Problem
+* Created accounts:
 
-I didn't know how to save and exit nano.
-Solution
+  * GitHub
+  * LinkedIn
+  * TryHackMe
+  * Hack The Box Academy
+* Used the same username across every platform.
+* Practiced basic Linux commands.
+* Learned how to edit and save files using `nano`.
+* Completed **OverTheWire Bandit Level 0**.
+* Finished the first **TryHackMe Networking** lesson.
 
-Ctrl + O → Enter → Ctrl + X
-Reflection
+---
 
-Today felt like the first real step into cybersecurity. Everything still feels new, but I completed every planned task and solved the problems I encountered instead of giving up.
+## 📚 Key Concepts Learned
 
-Tomorrow
+### 🌐 Internet History
 
-Bandit Level 1,2,3
-Continue TryHackMe Pre-Security or else related rooms
+* ARPANET was the foundation of today's Internet.
+* Tim Berners-Lee later invented the **World Wide Web**, making the Internet much easier to access.
 
+---
 
-#Day 2 — [27-06-2026] — Bandit Levels 1–3 & Computer Fundamentals
+### 🌍 Network Addressing
 
-Time
+| Concept         | Description                                          |
+| --------------- | ---------------------------------------------------- |
+| **MAC Address** | Permanent hardware identifier of a network interface |
+| **IP Address**  | Logical address assigned on a network and can change |
 
-~1.5 hours
+---
 
-What I Did
+### 🌐 IPv4 vs IPv6
 
-Solved Bandit Level 1 — a file literally named -.
-Solved Bandit Level 2 — a filename containing spaces.
-Solved Bandit Level 3 — a hidden file inside a directory.
-My planned TryHackMe networking room was locked ("Intro to LAN" and "OSI Model" both turned out to be premium now), so completed "Inside a Computer System" instead.
+| IPv4                | IPv6                              |
+| ------------------- | --------------------------------- |
+| 32-bit addressing   | 128-bit addressing                |
+| Four octets (0–255) | Vastly larger address space       |
+| Limited addresses   | Designed to solve IPv4 exhaustion |
 
-What I Learned
+---
 
-A file named - confuses cat because a bare dash is the shell's symbol for "read from somewhere else," not a real filename — adding ./ in front forces it to be read as a file sitting in the current folder. A filename with spaces gets split into separate arguments unless it's quoted or tab-completed, which made Level 2 harder than Level 1 even though the underlying idea — the shell taking filenames literally — was the same in both. ls by itself hides anything starting with a dot; ls -la shows everything, which is how Level 3 turned out to be the easy one of the three.
-On the TryHackMe side, I went through a body-part analogy comparing PC components (CPU, RAM, storage) to parts of the human body, which made sense quickly. The boot process section — power on, firmware, bootloader, OS — didn't fully land yet.
+### 🎭 Spoofing
 
-Biggest Problem
+Spoofing is the act of pretending to be another device or identity by forging information such as an IP or MAC address.
 
-Got stuck on Level 1 and Level 2 longer than expected, and the boot process explanation in the TryHackMe room didn't click.
+---
 
-Solution
+## 💻 Commands Practiced
 
-Level 1: cat ./- instead of plain cat -. Level 2: tab-completion instead of typing the filename by hand, since it auto-escapes the spaces. Boot process: not solved yet — flagged to revisit before moving further into the Computer Fundamentals module.
+```bash
+pwd
+ls
+cd
+cat
+nano
+ls -la
+```
 
-Reflection
+---
 
-Two levels stalled me today where Day 1's single level didn't, which feels like the difficulty curve starting to show up already. Didn't skip the part I didn't understand just to mark the room complete — left it as an open item instead of pretending it's settled.
+## ⚠️ Biggest Challenge
 
-Tomorrow
+Saving and exiting `nano`.
 
-Bandit Levels 4–6
-TryHackMe "Computer Types" room
-Revisit the boot process explanation
+### ✔️ Solution
 
+```text
+Ctrl + O
+Enter
+Ctrl + X
+```
+
+---
+
+## 💭 Reflection
+
+Today felt like the real beginning of my cybersecurity journey.
+
+Everything was unfamiliar at first, but I completed every planned task without skipping the difficult parts. Learning how Linux works already feels different from simply using a computer.
+
+---
+
+## 🚀 Tomorrow
+
+* [ ] Complete Bandit Levels 1–3
+* [ ] Continue the TryHackMe Pre-Security path
+* [ ] Practice more Linux commands
+
+---
+
+# 📅 Day 2 — 27 June 2026
+
+**Focus:** Bandit Levels 1–3 • Computer Fundamentals
+
+⏱️ **Time Spent:** ~1.5 Hours
+
+---
+
+## 🎯 Objectives
+
+* Complete Bandit Levels 1–3
+* Continue TryHackMe learning
+* Improve Linux file handling
+
+---
+
+## ✅ Completed
+
+* Solved **Bandit Level 1** (filename `-`)
+* Solved **Bandit Level 2** (filename containing spaces)
+* Solved **Bandit Level 3** (hidden file)
+* Completed the TryHackMe room **Inside a Computer System**
+
+> Planned networking rooms ("Intro to LAN" and "OSI Model") were unavailable because they are now premium content.
+
+---
+
+## 📚 Key Concepts Learned
+
+### 📁 Linux File Handling
+
+#### Level 1 — File Named `-`
+
+The filename `-` is interpreted as standard input by many commands.
+
+Use:
+
+```bash
+cat ./-
+```
+
+to explicitly reference the file.
+
+---
+
+#### Level 2 — Filenames with Spaces
+
+Files containing spaces must either be quoted:
+
+```bash
+cat "filename with spaces"
+```
+
+or escaped:
+
+```bash
+cat filename\ with\ spaces
+```
+
+Using **Tab Completion** is faster and avoids typing mistakes.
+
+---
+
+#### Level 3 — Hidden Files
+
+Files beginning with `.` are hidden by default.
+
+Display them using:
+
+```bash
+ls -la
+```
+
+---
+
+### 🖥️ Computer Fundamentals
+
+Learned the roles of:
+
+* CPU
+* RAM
+* Storage
+
+TryHackMe explained them using parts of the human body, making the concepts easier to remember.
+
+---
+
+### 🔄 Boot Process
+
+Current understanding:
+
+```
+Power On
+    ↓
+Firmware (BIOS / UEFI)
+    ↓
+Bootloader
+    ↓
+Operating System
+```
+
+This topic still needs additional review.
+
+---
+
+## ⚠️ Biggest Challenges
+
+* Spent longer than expected solving Bandit Levels 1 and 2.
+* Didn't fully understand the boot process.
+
+---
+
+## ✔️ Solutions
+
+### Bandit Level 1
+
+```bash
+cat ./-
+```
+
+---
+
+### Bandit Level 2
+
+Used **Tab Completion** to automatically escape spaces.
+
+---
+
+### Boot Process
+
+Marked for review instead of pretending I understood it.
+
+---
+
+## 💻 Commands Used
+
+```bash
+cat
+ls
+ls -la
+./
+Tab Completion
+```
+
+---
+
+## 💭 Reflection
+
+Today's challenges required more problem-solving than Day 1.
+
+Instead of rushing through the material, I documented what I still don't understand. That feels like better progress than simply checking off completed rooms.
+
+---
+
+## 🚀 Tomorrow
+
+* [ ] Complete Bandit Levels 4–6
+* [ ] Finish the "Computer Types" room
+* [ ] Revisit the boot process until it makes sense
 
