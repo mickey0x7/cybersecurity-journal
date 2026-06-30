@@ -272,3 +272,138 @@ Instead of rushing through the material, I documented what I still don't underst
 * [ ] Finish the "Computer Types" room
 * [ ] Revisit the boot process until it makes sense
 
+# 📅 Day 3 — 28 June 2026
+
+**Focus:** OverTheWire Bandit Levels 4–6 • TryHackMe Computer Types
+
+⏱️ **Time Spent:** ~1.5 Hours
+
+---
+
+## 🎯 Objectives
+
+* Complete Bandit Levels 4–6
+* Learn how to search for files using Linux commands
+* Complete the TryHackMe **Computer Types** room
+
+---
+
+## ✅ Completed
+
+* Solved **Bandit Level 4** by identifying the only human-readable file among multiple decoy files.
+* Solved **Bandit Level 5** using the `find` command to locate a file with an exact size.
+* Solved **Bandit Level 6** by searching the entire filesystem with `find` while filtering out permission-denied errors.
+* Completed the **Computer Types** room on TryHackMe.
+
+---
+
+## 📚 Key Concepts Learned
+
+### 📁 Bandit Level 4
+
+Used the following command to determine the type of every file inside the directory:
+
+```bash
+file ./*
+```
+
+Most files were identified as generic data, while one was recognized as **ASCII text**. Reading that file with `cat` revealed the password for the next level.
+
+---
+
+### 🔍 Bandit Level 5
+
+This level introduced me to the `find` command.
+
+```bash
+find . -type f -size 1033c
+```
+
+I learned:
+
+* `.` searches the current directory.
+* `-type f` searches only regular files.
+* `-size 1033c` searches for a file exactly **1033 bytes** in size.
+
+There were too many files to inspect manually, making `find` the correct tool for the job.
+
+---
+
+### 🌍 Bandit Level 6
+
+This level expanded the search to the entire filesystem.
+
+```bash
+find / -type f -size 33c 2>/dev/null
+```
+
+New concepts I learned:
+
+* `/` searches from the root of the filesystem.
+* `2>/dev/null` redirects standard error to the null device, hiding the large number of **Permission denied** messages while keeping useful output visible.
+
+---
+
+### 💻 TryHackMe — Computer Types
+
+Today's room explored the many forms computers take beyond traditional desktops and laptops.
+
+Some examples included:
+
+* Desktop computers
+* Laptops
+* Workstations
+* Servers
+* Embedded systems
+* Other specialized computing devices
+
+One interesting takeaway was realizing just how many everyday devices are actually computers. I enjoyed this room as much as **Inside a Computer System** and would like to revisit both later because I don't remember every detail after the first pass.
+
+---
+
+## ⚠️ Biggest Challenges
+
+* I solved Level 4 independently, but needed help understanding the `find` command for both Levels 5 and 6.
+* Although I could follow the commands after seeing them, I couldn't build them from scratch on my own.
+
+---
+
+## ✔️ Solutions
+
+Instead of simply copying the commands, I broke them down flag by flag to understand what each part does. This made the syntax much easier to follow and gave me a better understanding of how `find` works.
+
+I also still have one topic from Day 2 that I need to revisit:
+
+* Linux boot process
+
+---
+
+## 💻 Commands Learned
+
+```bash
+file ./*
+
+find . -type f -size 1033c
+
+find / -type f -size 33c 2>/dev/null
+```
+
+---
+
+## 💭 Reflection
+
+Today reinforced an important lesson: cybersecurity isn't just about knowing commands—it's about understanding when and why to use them.
+
+I needed outside help on Levels 5 and 6 because the `find` command was completely new to me. Rather than treating that as a failure, I'm treating it as an area to practice until I can write simple searches without looking them up.
+
+I'm also noticing that a few topics, like the Linux boot process and `find` syntax, deserve another review before I continue piling on new material. Building a strong foundation now will make later topics much easier to understand.
+
+---
+
+## 🚀 Tomorrow
+
+* [ ] Complete Bandit Levels 7–9
+* [ ] Revisit the Linux boot process
+* [ ] Practice the `find` command with different search options until I can use it confidently
+
+
